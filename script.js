@@ -1,97 +1,92 @@
 const produtos = {
-    monitor1: {
-        nome: "Monitor Gamer Ninja Tenseigan, 23.8 Pol, Full HD, 1ms, 120Hz, VA, 91% sRGB",
-        imagem: "Img/MONITORES/MONITOR1.png",
-        precoAntigo: "R$ 481,90",
-        preco: "R$ 839,99",
-        parcelamento: "R$ 352,93 até em 12x de R$ 29,41 sem juros no cartão",
-        codigo: "MONITOR1"
+    item001: {
+        imagem: "Img/PLACAS/item001.png",
+        nome: "Placa de Vídeo MSI NVIDIA GeForce RTX 5060 Ti Shadow 2X OC Plus, 16GB, GDDR7, DLSS, Ray Tracing, 912-V535-029",
+        precoAntigo: "R$ 9.396,11",
+        preco: "R$ 5.899,99",
+        parcelamento: "R$ 6.941,16 em até 12x de R$ 578,43 sem juros no cartão"
     },
-    monitor2: {
-        nome: "Monitor Gamer SuperFrame Precision, 23.8 Pol, Flat, Full HD, IPS, 1ms, 180Hz, 99% sRGB",
-        imagem: "Img/MONITORES/MONITOR2.png",
-        precoAntigo: "R$ 481,90",
+
+    item002: {
+        imagem: "Img/PROCESSADORES/item002.png",
+        nome: "Processador AMD Ryzen 5 5500 3.6GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4, Sem Vídeo Integrado, 100-100000457BOX",
+        precoAntigo: "R$ 1.031,52",
         preco: "R$ 499,99",
-        parcelamento: "R$ 588,2 até em 12x de R$ 49,02 sem juros no cartão",
-        codigo: "MONITOR2"
+        parcelamento: "R$ 588,22 em até 12x de R$ 49,02 sem juros no cartão"
     },
-    monitor3: {
-        nome: "Monitor Gamer SuperFrame Orbit Plus V2, 27 Pol, Quad HD, 275Hz, IPS, 0.5ms, 99% sRGB",
-        imagem: "Img/MONITORES/MONITOR3.png",
-        precoAntigo: "R$ 1729,90",
-        preco: "R$ 1.099,99",
-        parcelamento: "R$ 1.294,11 até em 12x de R$ 107,84 sem juros no cartão",
-        codigo: "MONITOR3"
+
+    item003: {
+        imagem: "Img/PLACA-MÃE/item003.png",
+        nome: "Placa Mãe Gigabyte B550M AORUS Elite, Chipset B550, AMD AM4, mATX, DDR4",
+        precoAntigo: "R$ 1.239,99",
+        preco: "R$ 749,99",
+        parcelamento: "R$ 882,34 em até 12x de R$ 73,53 sem juros no cartão"
     },
-    monitor4: {
-        nome: "Monitor Gamer SuperFrame Orbit Plus V2, 27 Pol, Quad HD, 275Hz, IPS, 0.5ms, 99% sRGB",
-        imagem: "Img/MONITORES/MONITOR4.png",
-        precoAntigo: "R$ 569,90",
-        preco: "R$ 349,99",
-        parcelamento: "R$ 453,52 até em 12x de R$ 37,76 sem juros no cartão",
-        codigo: "MONITOR4"
+
+    item004: {
+        imagem: "Img/MEMORIA-RAM/item004.png",
+        nome: "Memória DDR5 Kingston Fury Beast EXPO, 8GB, 5600Mhz, Black, KF556C36BBE-8",
+        precoAntigo: "R$ 1.946,59",
+        preco: "R$ 1.259,90",
+        parcelamento: "R$ 1.482,24 em até 12x de R$ 123,52 sem juros no cartão"
     },
-    placavideo1: {
-        nome: "Placa de Vídeo MSI NVIDIA GeForce RTX 5060 Shadow 2X OC, 8GB, GDDR7, DLSS, Ray Tracing, 912-V537-038",
-        imagem: "Img/PLACAS/PLACA1.png",
-        precoAntigo: "R$ 4619,90",
-        preco: "R$ 2.599,99",
-        parcelamento: "R$ 3.058.81 até em 12x de R$ 254,90 sem juros no cartão",
-        codigo: "PLACA1"
+
+    item005: {
+        imagem: "Img/MONITORES/item005.png",
+        nome: "Monitor Gamer Rise Mode Elite, 27 Pol, Quad HD, IPS, 165Hz, 1ms, 99% sRGB, HDMI/DP, FreeSync, RM-MOG-27F1652K-B",
+        precoAntigo: "R$ 1.789,99",
+        preco: "R$ 879,99",
+        parcelamento: "R$ 1.035,28 em até 12x de R$ 86,27 sem juros no cartão"
     },
-    placavideo2: {
-        nome: "Placa de Vídeo Palit NVIDIA GeForce RTX 5070 White OC, 12GB, GDDR7, DLSS, Ray Tracing, NE75070U19K9-GB2050W",
-        imagem: "Img/PLACAS/PLACA2.png",
-        precoAntigo: "R$ 6.629,90",
-        preco: "R$ 4.899.90",
-        parcelamento: "R$ 5.764,59 em até 12x de R$ 480,38 sem juros no cartão",
-        codigo: "PLACA2"
+
+    item006: {
+        imagem: "Img/CADEIRAS/item006.png",
+        nome: "Cadeira Gamer SuperFrame Griffin, Reclinável, 3D, Creme e Laranja, SF-CH-GFR3DWOL",
+        precoAntigo: "R$ 1.499,99",
+        preco: "R$ 789,99",
+        parcelamento: "R$ 929,40 em até 12x de R$ 77,45 sem juros no cartão"
     }
 };
 
-const cards = document.querySelectorAll(".produto-card");
 
-cards.forEach((card) => {
+function abrirproduto(infoproduto) {
+    localStorage.setItem(".produto-info", infoproduto);
+}
 
-    const tipo = card.dataset.type;
-
-    if (tipo) {
-        card.href = `comprar.html?item=${tipo}`;
-    }
-
-});
-
-const params = new URLSearchParams(window.location.search);
-const tipoProduto = params.get("item");
-const produto = produtos[tipoProduto];
+const tipoproduto = localStorage.getItem(".produto-info");
+const produto = produtos[tipoproduto];
 
 if (produto) {
 
+    /* IMAGEM */
     const produtoImagem = document.getElementById("produto-imagem");
 
     if (produtoImagem) {
         produtoImagem.src = produto.imagem;
-        produtoImagem.alt = produto.nome;
     }
 
+    /* NOME */
     const nome = document.getElementById("produto-nome");
 
     if (nome) {
         nome.textContent = produto.nome;
     }
 
+    /* PREÇO ANTIGO */
     const precoAntigo = document.getElementById("produto-preco-antigo");
 
     if (precoAntigo) {
         precoAntigo.textContent = `De: ${produto.precoAntigo} por:`;
     }
 
+    /* PREÇO */
     const preco = document.querySelector(".produto-preco");
 
     if (preco) {
         preco.textContent = produto.preco;
     }
 
+    /* PARCELAMENTO */
     const parcelamento = document.getElementById("produto-parcelamento");
 
     if (parcelamento) {
