@@ -3,51 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
     <title>BG Tech - Os Melhores Preços do Mercado</title>
 </head>
 <body>
     <div class="tech">
-        <p>Tecnologia que impulsiona o mundo.</p>
+        <p>
+            <i class="fa-brands fa-square-web-awesome"></i>
+            Tecnologia que impulsiona o mundo.
+        </p>
         <nav class="top-links">
-            <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M3 14a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2Zm18 0a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2Z"/></svg><span>Atendimento</span></a>
-            <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21 8-9 5-9-5 9-5 9 5Z"/><path d="M3 8v10l9 5 9-5V8M12 13v10"/></svg><span>Meus pedidos</span></a>
-            <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg><span>Favoritos</span></a>
-            <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg><span>Entrar / Criar conta</span></a>
+            <a href="#">
+                <i class="fa-solid fa-headset"></i>
+                <span>Atendimento</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Meus pedidos</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-star"></i>
+                <span>Favoritos</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Entrar / Criar conta</span>
+            </a>
         </nav>
     </div>
-    <header>
-    <a href="index.html" class="logo">
-        <img src="Img/Title.png" alt="">
-    </a>
-    <nav>
-        <a href="placas.html">PLACAS DE VÍDEO</a>
-        <a href="processadores.html">PROCESSADORES</a>
-        <a href="pcgamer.html">PC GAMER</a>
-        <a href="hardware.html">HARDWARE</a>
-        <a href="monitor.html">MONITORES</a>
-    </nav>
+    <header class="header-principal">
+        <a href="index.html" class="logo">
+            <img src="Img/Title.png" alt="">
+        </a>
+        <nav>
+            <a href="placas.html">PLACAS DE VÍDEO</a>
+            <a href="processadores.html">PROCESSADORES</a>
+            <a href="pcgamer.html">PC GAMER</a>
+            <a href="cadeiras.html">CADEIRAS</a>
+            <a href="monitor.html">MONITORES</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Oque você procura?">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
     </header>
     <main class="pagina-placas">
         <div class="banner">
             <img src="Img/banner.png" alt="">
         </div>
         <div class="container-produtos">
-            <a href="comprar.html?item=placavideo1" class="produto-card" id="produto-link" data-type="placavideo1">
-                <img src="Img/PLACAS/PLACA1.png" alt="PlacaDeVideo">
-                <h3>Placa de Vídeo MSI NVIDIA GeForce RTX 5060 Shadow 2X OC, 8GB, GDDR7, DLSS, Ray Tracing, 912-V537-038</h3>
-                <p class="antigo-preco"><span>De: R$ 4619,90</span> por:</p>
-                <p class="preco">R$ 2.599,99</p>
-                <p class="descricao">R$ 3.058.81 até em 12x de R$ 254,90 sem juros no cartão</p>
+            <a href="comprar.html?item=item001" class="produto-card" id="produto-link" onclick="abrirproduto('item001')">
+                <img src="Img/PLACAS/item001.png" alt="Placa-Video">
+                <h3>Placa de Vídeo MSI NVIDIA GeForce RTX 5060 Ti Shadow 2X OC Plus, 16GB, GDDR7, DLSS, Ray Tracing, 912-V535-029</h3>
+                <p class="antigo-preco"><span>De: R$ 9.396,11</span> por:</p>
+                <p class="preco">R$ 5.899,99</p>
+                <p class="descricao">R$ 6.941,16 em até 12x de R$ 578,43 sem juros no cartão</p>
             </a>
-            <a href="comprar.html?item=placavideo2" class="produto-card" id="produto-link" data-type="placavideo2">
-                <img src="Img/PLACAS/PLACA2.png" alt="PlacaDeVideo">
-                <h3>Placa de Vídeo Palit NVIDIA GeForce RTX 5070 White OC, 12GB, GDDR7, DLSS, Ray Tracing, NE75070U19K9-GB2050W</h3>
-                <p class="antigo-preco"><span>De: R$ 6,629,90</span> por:</p>
-                <p class="preco">R$ 4.899,90</p>
-                <p class="descricao">R$ 5.764,59 em até 12x de R$ 480,38 sem juros no cartão</p>
-            </a>
+            <!--So pra separar-->
         </div>
     </main>
     <script src="script.js"></script>
