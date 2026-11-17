@@ -6,7 +6,6 @@ const produtos = {
         preco: "R$ 5.899,99",
         parcelamento: "R$ 6.941,16 em até 12x de R$ 578,43 sem juros no cartão"
     },
-
     item002: {
         imagem: "Img/PROCESSADORES/item002.png",
         nome: "Processador AMD Ryzen 5 5500 3.6GHz (4.2GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4, Sem Vídeo Integrado, 100-100000457BOX",
@@ -14,7 +13,6 @@ const produtos = {
         preco: "R$ 499,99",
         parcelamento: "R$ 588,22 em até 12x de R$ 49,02 sem juros no cartão"
     },
-
     item003: {
         imagem: "Img/PLACA-MÃE/item003.png",
         nome: "Placa Mãe Gigabyte B550M AORUS Elite, Chipset B550, AMD AM4, mATX, DDR4",
@@ -22,7 +20,6 @@ const produtos = {
         preco: "R$ 749,99",
         parcelamento: "R$ 882,34 em até 12x de R$ 73,53 sem juros no cartão"
     },
-
     item004: {
         imagem: "Img/MEMORIA-RAM/item004.png",
         nome: "Memória DDR5 Kingston Fury Beast EXPO, 8GB, 5600Mhz, Black, KF556C36BBE-8",
@@ -30,7 +27,6 @@ const produtos = {
         preco: "R$ 1.259,90",
         parcelamento: "R$ 1.482,24 em até 12x de R$ 123,52 sem juros no cartão"
     },
-
     item005: {
         imagem: "Img/MONITORES/item005.png",
         nome: "Monitor Gamer Rise Mode Elite, 27 Pol, Quad HD, IPS, 165Hz, 1ms, 99% sRGB, HDMI/DP, FreeSync, RM-MOG-27F1652K-B",
@@ -38,13 +34,19 @@ const produtos = {
         preco: "R$ 879,99",
         parcelamento: "R$ 1.035,28 em até 12x de R$ 86,27 sem juros no cartão"
     },
-
     item006: {
         imagem: "Img/CADEIRAS/item006.png",
         nome: "Cadeira Gamer SuperFrame Griffin, Reclinável, 3D, Creme e Laranja, SF-CH-GFR3DWOL",
         precoAntigo: "R$ 1.499,99",
         preco: "R$ 789,99",
         parcelamento: "R$ 929,40 em até 12x de R$ 77,45 sem juros no cartão"
+    },
+    item007: {
+        imagem: "Img/PC-GAMER/item007.png",
+        nome: "PC GAMER COMMANDER AMD Ryzen 5 5500 / NVIDIA RTX 2060 / 16GB DDR4 / SSD 240GB",
+        precoAntigo: "R$ 6.898,43",
+        preco: "R$ 3.999,99",
+        parcelamento: "R$ 4.705,87 em até 12x de R$ 392,16 sem juros no cartão"
     }
 };
 
