@@ -55,7 +55,7 @@ img {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 40px 0 0 320px;
+    margin: 40px 0 0 350px;
     display: grid;
     grid-template-columns: repeat(6, 200px);
     justify-content: center;
@@ -338,4 +338,119 @@ img {
 }
 .search-box button:hover {
     color: #FF5A00;
+}
+
+/* form */
+.form{
+    background-color: #0B0B0B;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 20%;
+    margin: 40px auto;
+    height: 50vh;
+    color: rgb(207, 206, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.5px solid #2e2e2e;
+}
+
+.form button{
+    color: black;
+    background-color: #FF5A00;
+    padding: 3% 30%;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form button i{
+    color: black;
+}
+
+.form h2{
+    font-size: 30px;
+    color: white;
+}
+
+.form-pt3,
+.form-pt4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-pt3 a{
+    color: #FF5A00;
+    text-decoration: none;
+}
+
+.form-pt3 div{
+    display: flex;
+    gap: 10px;
+}
+
+.form i{
+    color: rgb(207, 206, 206);
+}
+
+.form input{
+    background: none;
+    border: none;
+    outline: none;
+    color: #888;
+    outline: white;
+}
+
+.form-pt1 div,
+.form-pt2 div{
+    border: 1px #2e2e2e solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: text;
+}
+
+.form-pt1 article i,
+.form-pt2 article i{
+    margin-right: 10px;
+}
+.form-pt1 p,
+.form-pt2 p{
+    margin-bottom: 10px;
+}
+
+.form-pt4{
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-pt4 a{
+    color: #FF5A00;
+}
+
+.login-cadastro{
+    background-color: #0e0d0d;
+    flex: 1;
+}
+
+.titulo-form img{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.titulo-form{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-form spam{
+    color: #FF5A00;
+}
+
+.titulo-form h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
 }
