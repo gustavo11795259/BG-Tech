@@ -50,55 +50,66 @@
             </button>
         </div>
     </header>
-    <main class="login-cadastro">
-        <!--Parte: Login-->
-        <article class="titulo-form">
-            <img src="Img/Title.png" alt="">
-            <h1>BEM VINDO DE VOLTA!</h1>
-            <p>Acesse sua conta para acompanhar seus pedidos,<br> seus favoritos e muito mais.</p>
-        </article>
-        <section class="form">
-            <h2>Entrar</h2>
-            <div class="form-pt1"> 
-                <p>E-mail ou CPF</p>
-                <div>
-                    <article>
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="text" placeholder="Digite seu E-mail ou CPF">
-                    </article>
-                </div>
+    <main class="login-container">
+       <section class="login-card">
+            <div class="login-logo">
+                <img src="Title.png" alt="LogoBGTech">
+            </div>
+            <h1>BG TECH</h1>
+            <p class="login-subtitulo">O próximo nível do seu setup!</p>
+
+            <input tyoe="radio" name="form" id="aba-login" checked>
+            <input tyoe="radio" name="form" id="aba-cadastro">
+
+            <div class="abas-login">
+                <label for="aba-login">Entrar</label>
+                <label for="aba-cadastro">Cadastrar</label>
             </div>
 
-            <div class="form-pt2">
-                <p>Senha</p>
-                <div>
-                    <article>
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="text" placeholder="Digite sua senha">
-                    </article>
-                    <i class="fa-regular fa-eye-slash"></i>
-                </div>
-            </div>
+            <form class="login-cadastro">
+                <h2>BEM-VINDO DE VOLTA!</h2>
+                <p class="login-descricao">Acesse sua conta</p>
 
-            <div class="form-pt3">
-                <div>
-                    <input type="checkbox">
-                    <p>Lembrar de mim</p>
-                </div>
-                <a href="#">Esqueceu sua senha?</a>
-            </div>
+                <label for="login-nome">Nome completo</label>
+                <input type="text" id="login-nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
 
-            <button>Entrar <i class="fa-solid fa-arrow-right"></i></button>
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" name="email" placeholder="Digite seu e-mail" autocomplete="name" required>
 
-            <div class="linha">
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" name="senha" placeholder="Digite sua senha" autocomplete="name" required>
                 
-            </div>
+                <div class="login-opcoes">
+                    <label class="login-lembrar">
+                        <input type="checkbox" name="lembrar">Lembrar de mim</label>
+                        <a href="recuperacao">Esqueceu a senha?</a>
+                </div>
+                <button type="submit">ENTRAR</button>
+            </form>
 
-            <div class="form-pt4">
-                <p>Não tem uma conta? </p>
-                <a href="cadastro.html">Criar Conta</a>
-            </div>
-        </section>
+            <form class="login-cadastro">
+                <h2>CRIE SUA CONTA!</h2>
+                <p class="login-descricao">Cadastre-se para continuar</p>
+
+                <label for="cadastro-nome">Nome completo</label>
+                <input type="text" id="cadastro-nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
+
+                <label for="cadastro-email">E-mail</label>
+                <input type="email" id="cadastro-email" name="email" placeholder="Digite seu e-mail" autocomplete="name" required>
+
+                <label for="cadastro-senha">Senha</label>
+                <input type="password" id="cadastro-senha" name="senha" placeholder="Digite sua senha" minlength="6" autocomplete="name" required>
+                
+                <label for="confirmar-senha">Confirmar senha</label>
+
+                <div class="login-opcoes">
+                    <label class="login-lembrar">
+                        <input type="checkbox" name="lembrar">Lembrar de mim</label>
+                        <a href="recuperacao">Esqueceu a senha?</a>
+                </div>
+                <button type="submit">ENTRAR</button>
+            </form>
+       </section>
     </main>
     <script src="script.js"></script>
 </body>
